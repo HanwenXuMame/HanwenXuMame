@@ -1,0 +1,75 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #1a1a1a;
+  color: #ccc;
+  background-size: cover;
+}
+
+.psp-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.xmb-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.nav-item.active {
+  background: #888;
+  color: #fff;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.section {
+  display: none;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.section.active {
+  display: flex;
+}
+
+.works-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.work-item {
+  position: relative;
+}
+
+.work-item img {
+  width: 100%;
+  max-width: 400px;
+  transition: opacity 0.3s ease-in-out;
+}

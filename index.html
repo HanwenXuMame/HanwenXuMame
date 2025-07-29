@@ -1,0 +1,51 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hanwen Xu Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="psp-container">
+    <nav class="xmb-nav">
+      <button id="left-btn">&#9664;</button>
+      <ul id="nav-list">
+        <li class="nav-item active" data-section="welcome">Welcome</li>
+        <li class="nav-item" data-section="about">About Me</li>
+        <li class="nav-item" data-section="works">Works</li>
+      </ul>
+      <button id="right-btn">&#9654;</button>
+    </nav>
+
+    <div class="content-container">
+      <section id="welcome" class="section active">
+        <h1>Welcome to Hanwen Xu's Flavor Town</h1>
+        <p>Click through the PSP interface to explore!</p>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Game designer and 3D artist. Specializing in interactive weirdness.</p>
+      </section>
+
+      <section id="works" class="section">
+        <h2>Works</h2>
+        <div class="works-gallery">
+          <div class="work-item">
+            <img src="assets/images/placeholder.jpg" data-gif="assets/gifs/placeholder.gif" alt="Game 1"/>
+            <p>Game Title Placeholder</p>
+          </div>
+          <div class="work-item">
+            <img src="assets/images/placeholder.jpg" data-gif="assets/gifs/placeholder.gif" alt="Game 2"/>
+            <p>Game Title Placeholder</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
