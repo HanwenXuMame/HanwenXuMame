@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,42 +7,59 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="psp-container">
-    <nav class="xmb-nav">
-      <button id="left-btn">&#9664;</button>
-      <ul id="nav-list">
-        <li class="nav-item active" data-section="welcome">Welcome</li>
-        <li class="nav-item" data-section="about">About Me</li>
-        <li class="nav-item" data-section="works">Works</li>
-      </ul>
-      <button id="right-btn">&#9654;</button>
-    </nav>
+  <!-- Navigation Arrows -->
+  <div class="nav-controls">
+    <button id="left-btn">&#9664;</button>
+    <button id="right-btn">&#9654;</button>
+  </div>
 
-    <div class="content-container">
-      <section id="welcome" class="section active">
-        <h1>Welcome to Hanwen Xu's Flavor Town</h1>
-        <p>Click through the PSP interface to explore!</p>
-      </section>
+  <!-- PSP-style Horizontal Panel Container -->
+  <div class="panel-container">
+    
+    <!-- Welcome Panel -->
+    <section class="panel" id="welcome">
+      <h1>Welcome</h1>
+      <p>Welcome to the portfolio of Hanwen Xu.</p>
+      <p>Click the arrows or swipe to navigate through my work.</p>
+    </section>
 
-      <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>Game designer and 3D artist. Specializing in interactive weirdness.</p>
-      </section>
+    <!-- About Panel -->
+    <section class="panel" id="about">
+      <h1>About Me</h1>
+      <p>I'm Hanwen Xu — a game designer and 3D artist with a passion for playful tech and interactive strangeness.</p>
+      <p>I work across Unreal, Unity, and custom engines, often bridging design and technical execution.</p>
+    </section>
 
-      <section id="works" class="section">
-        <h2>Works</h2>
-        <div class="works-gallery">
-          <div class="work-item">
-            <img src="assets/images/placeholder.jpg" data-gif="assets/gifs/placeholder.gif" alt="Game 1"/>
+    <!-- Works Panel -->
+    <section class="panel" id="works">
+      <h1>Works</h1>
+      <div class="works-gallery">
+        <!-- Example Game 1 -->
+        <div class="work-item">
+          <a href="projects/project-1.html">
+            <img
+              src="assets/images/placeholder.jpg"
+              data-gif="assets/gifs/placeholder.gif"
+              alt="Game Thumbnail"
+            />
             <p>Game Title Placeholder</p>
-          </div>
-          <div class="work-item">
-            <img src="assets/images/placeholder.jpg" data-gif="assets/gifs/placeholder.gif" alt="Game 2"/>
-            <p>Game Title Placeholder</p>
-          </div>
+          </a>
         </div>
-      </section>
-    </div>
+
+        <!-- Example Game 2 -->
+        <div class="work-item">
+          <a href="projects/project-2.html">
+            <img
+              src="assets/images/placeholder.jpg"
+              data-gif="assets/gifs/placeholder.gif"
+              alt="Game Thumbnail"
+            />
+            <p>Game Title Placeholder</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <script src="script.js"></script>
